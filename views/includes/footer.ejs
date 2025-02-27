@@ -1,17 +1,60 @@
 <footer>
-    <div class="f-info">
-        <div class="f-info-socials">
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+    <div class="footer-container">
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/airbnb" target="blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/airbnb/" target="blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/airbnb" target="blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
-            <div class="f-info-brand">&copy; Wanderlust private Limited</div>
-            <div class="f-info-links">
-                <a href="/privacy">Privacy</a>
-                <a href="/terms">Terms</a>
-            </div>
-            
-
+        <div class="footer-brand">
+            &copy; 2025 Airbnb Private Limited. All rights reserved.
+        </div>
+        <div class="footer-links">
+            <a href="/privacy" target="_blank">Privacy Policy</a>
+            <a href="/terms" target="_blank">Terms of Service</a>
+        </div>
     </div>
 </footer>
+
+<style>
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+        text-align: center;
+    }
+    .footer-socials a {
+        margin: 0 10px;
+        font-size: 20px;
+        color: #333;
+        transition: color 0.3s;
+    }
+    .footer-socials a:hover {
+        color: #ff385c;
+    }
+    .footer-brand {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+    .footer-links {
+        margin-top: 10px;
+    }
+    .footer-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #007bff;
+        transition: color 0.3s;
+    }
+    .footer-links a:hover {
+        color: #ff385c;
+    }
+</style>
