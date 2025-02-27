@@ -128,14 +128,16 @@ app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
 
 
+
 app.all("*",(req,res,next)=>{
   next(new ExpressError("Page not found",404));
 });
 
 app.use((err, req, res, next) => {
-  let {statusCode=500, message="something went wrong!"}= err;
+  let { statusCode = 500 } = err;
+  let message = err.message || "Something went wrong!";
   //res.status(statusCode).send(message);
-  res.status(statusCode).render("error.ejs",{message});
+  res.status(statusCode).render("error.ejs", { message });
 });
 
 app.listen(8080, () => {
