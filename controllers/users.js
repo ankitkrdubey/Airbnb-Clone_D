@@ -16,7 +16,7 @@ module.exports.signup = async (req, res) => {
             if (err) {
                 return next(err); // Pass error to next middleware
             }
-            req.flash("success", "Welcome to Wanderlust");
+            req.flash("success", "Welcome to Airbnb");
             res.redirect("/listings");
         });
 
